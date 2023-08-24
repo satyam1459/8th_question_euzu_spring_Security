@@ -19,9 +19,7 @@ public class UserInfoUserDetails implements UserDetails {
     public UserInfoUserDetails(UserInfo userInfo) {
         this.email = userInfo.getEmail();
         this.password = userInfo.getPassword();
-        authorities = Arrays.stream(userInfo.getRoles().split(", "))
-                .map(SimpleGrantedAuthority::new)
-                .collect(Collectors.toList());
+        authorities = g
     }
 
     @Override

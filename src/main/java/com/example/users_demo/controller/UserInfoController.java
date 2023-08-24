@@ -24,13 +24,4 @@ public class UserInfoController {
         return "User added successfully";
     }
 
-    @GetMapping("/loadForgotPassword")
-    public String loadForgotPassword(){
-        return "Forgot password";
-    }
-
-    @GetMapping("/loadResetPassword")
-    public String loadResetPassword(){
-        return "reset_password";
-    }
 }
